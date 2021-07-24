@@ -1,2 +1,8 @@
-package com.mm.securitydemo.auth;public interface ApplicationUserDao {
+package com.mm.securitydemo.auth;
+
+import java.util.Optional;
+
+public interface ApplicationUserDao {
+
+    Optional<ApplicationUser> selectApplicationUserByUsername(String username);
 }
